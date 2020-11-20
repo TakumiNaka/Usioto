@@ -155,7 +155,7 @@ header #logo img{
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
-	background: ;
+	background:white ; 
 	/*背景色の設定*/
 	padding: 120px 5% 50px;
 }
