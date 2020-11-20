@@ -6,29 +6,29 @@
 /*１枚目*/
 @keyframes slide1 {
 	0% {opacity: 0;}
-	10% {opacity: 1;}
-	30% {opacity: 1;}
-	40% {opacity: 0;}
+	24% {opacity: 1;}
+	50% {opacity: 1;}
+	51% {opacity: 0;}
 	100% {opacity: 0;}
 }
 /*２枚目*/
 @keyframes slide2 {
 	0% {opacity: 0;}
 	20% {opacity: 0;}
-	30% {opacity: 1;}
-	60% {opacity: 1;}
-	70% {opacity: 0;}
+	51% {opacity: 1;}
+	75% {opacity: 1;}
+	76% {opacity: 0;}
 	100% {opacity: 0;}
 }
 /*３枚目*/
 @keyframes slide3 {
 	0% {opacity: 0;}
 	50% {opacity: 0;}
-	60% {opacity: 1;}
-	85% {opacity: 1;}
-	95% {opacity: 0;}
+	76% {opacity: 1;}
+	99% {opacity: 1;}
 	100% {opacity: 0;}
 }
+
 
 /*mainimg
 ---------------------------------------------------------------------------*/
