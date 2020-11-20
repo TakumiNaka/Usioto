@@ -120,12 +120,18 @@ a:hover {
 	float: left;
 	line-height: 70px;
 	margin-left: 4%;
+}
 
+#menubar ul li a{
+    text-decoration: none;
+    color: teal;
+    padding-bottom: 5px;
 }
 
 /*メニューのマウスオン時*/
-#menubar ul li a:hover{
-	border-bottom:3px solid #841212;
+#menubar ul li a:hover {
+    border-bottom:3px solid black;
+    padding: 10px;
 }
 
 /*スマホ用メニューを非表示*/
