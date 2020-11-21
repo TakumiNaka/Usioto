@@ -41,13 +41,13 @@
 }
 /*３枚画像の共通設定*/
 #slide1,#slide2,#slide3 {
-	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-duration: 16s;	/*実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	position: absolute;left:0px;top:0px;width: 100%;height: auto;
 	animation-fill-mode: both;
 	animation-delay: 1s;
 }
-/*土台画像*/
+/*土台画像* 土台画像を一枚目を一緒にして、4枚目スライド作った方が良さげ説/
 #slide0 {
 	position: relative;width: 100%;height: auto;
 }
