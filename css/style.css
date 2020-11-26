@@ -11,13 +11,8 @@ body{
     /*背景色*/
     color: black;
     /*全体の文字色*/
-    font-family:"Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
-    /*フォント種類*/
+	font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	    /*フォント種類*/
     line-height: 2;
     /*行間*/
     -webkit-text-size-adjust: none;
@@ -28,6 +23,7 @@ h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form {
 	padding: 0px;
 	font-size: 100%;
 	font-weight: normal;
+	
 }
 
 ul {
@@ -67,9 +63,9 @@ a {
 }
 
 a:hover {
-	color: #f7e653;
+	color: red;
 	/*マウスオン時の文字色*/
-	text-decoration: none;
+	text-decoration: solid black;
 	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
 }
 
@@ -124,8 +120,9 @@ a:hover {
 
 #menubar ul li a{
     text-decoration: none;
-    color: teal;
-    padding-bottom: 5px;
+    color: black;
+	padding-bottom: 5px;
+	font-size: 20px;
 }
 
 /*メニューのマウスオン時*/
@@ -150,9 +147,10 @@ a:hover {
 /*ロゴ画像*/
 header #logo img{
 	position: absolute;
-	left: 45%;
+	left: 41%;
 	top: 0px;
-	width: 15%;
+	width: 20%;
+	opacity: 75%;
 }
 
 /*contents
@@ -178,3 +176,310 @@ header #logo img{
 	letter-spacing: 0.2em;
 	color: black;
 }
+
+#contents h2::first-letter {
+	font-size: 60px;
+	border: 1.5px solid black	;
+	padding: 10px;
+	margin-right: 5px;
+	letter-spacing: normal;
+	text-shadow: 5px 5px rgba(255, 255, 255, 0.2);
+	/*文字の影。右に、下に、255,255,255は白の事で0.2は透明度20%の事。*/
+}
+
+/*box1
+---------------------------------------------------------------------------*/
+.box1 {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.box1 figcaption.w50 {
+	width: 47%;
+}
+
+.box1 figcaption strong {
+	display: block;
+	font-weight: normal;
+	font-size: 25px;	/*文字サイズ*/
+	color: black;		/*文字色*/
+}
+
+
+/*footer
+---------------------------------------------------------------------*/
+#tenpoinfo {
+	position: relative;
+	overflow: hidden;
+	background: white;
+	color: black;
+	padding-bottom:90px;
+}
+#tenpoinfo::before{
+	background: url("photos\店頭.jpg") no-repeat top center;
+	width: 100%;
+	height: 587px;
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 56px;
+}
+#tenpoinfo h2{
+	text-align: center;
+    font-size: 44px;
+    letter-spacing: 9px;
+    padding: 143px 0 77px 10px;
+    border-bottom: 1px solid #303030;
+}
+
+#tenpoinfo p.bnr {
+	text-align: center;
+}
+
+#tenpoinfo .box{
+	text-align: center;
+	border: 1px solid #303030;
+	border-top: none;
+	overflow: hidden;
+}
+
+#tenpoinfo .box dl{
+	float: left;
+    width: 660px;
+    font-size: 11px;
+    padding: 32px 0 20px;
+}
+#tenpoinfo .box dl dt{
+	font-size: 17px;
+	letter-spacing: 4px;
+}
+#tenpoinfo .box dl dt span.tel{
+	font-size: 30px;
+	padding-left: 20px;
+    text-decoration: none;
+    
+}
+
+#tenpoinfo .box dl dt span.tel a{
+    color: black;
+   
+}
+
+
+#tenpoinfo .box dl dd{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+#tenpoinfo .box p.btn {
+	background-image: url(backgroudimgs\papyrus-dark.png) repeat;
+	color: white;
+    font-size: 19px;
+    line-height: 48px;
+    border-radius: 24px;
+    letter-spacing: 4px;
+    width: 285px;
+    float: right;
+    margin: 35px 50px 0 0;
+}
+#tenpoinfo .box p.btn a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+#tenpoinfo .info_box_ac {
+	padding: 46px 0 430px;
+}
+#tenpoinfo .info_box_ac p.photo{
+	float: left;
+}
+
+#tenpoinfo .list_info{
+	float: right;
+	width: 590px;
+}
+
+#tenpoinfo .list_info dl{
+	float: right;
+	width: 590px;
+	border-bottom: 1px solid #303030;
+	padding: 12px 0;
+	font-size: 14px;
+	line-height: 25px;
+	letter-spacing: 0.6px;
+}
+#tenpoinfo .list_info dl dt{
+	float: left;
+	padding-left: 15px;
+	width: 140px;
+}
+
+#tenpoinfo .list_info dl dd{
+	float: left;
+	width: 435px;
+}
+
+
+#sec_link {
+	position: relative;
+	overflow: hidden;
+	background: #000;
+}
+#sec_link ul {
+	margin-right: 54px;
+	float: right;
+}
+#sec_link ul li {
+	float: left;
+	margin-left: 30px;
+	width: 175px;
+	line-height: 40px;
+	font-size: 15px;
+	position: relative;
+	background: url("https://www.yakiniku-izou.com/css/../img/index/btn_bg.jpg") no-repeat;
+	text-align: center;
+}
+#sec_link ul li span, #sec_link ul li a {
+	
+	display: block;
+	text-decoration: none;
+}
+
+/*コピーライト
+---------------------------------------------------------------------------*/
+#copyright {
+	clear: both;
+	text-align: center;
+	background: white;	/*背景色*/
+}
+#copyright a {text-decoration: none;}
+#copyright a:hover {color: red;}
+
+/*画面幅800px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:800px){
+
+	/*メインメニュー
+	---------------------------------------------------------------------------*/
+	/*アニメーションのフレーム設定。全100コマアニメーションだと思って下さい。透明度(opacity)0%から透明度100%にする指定。*/
+	@keyframes menu1 {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+	}
+	/*ヘッダー
+	---------------------------------------------------------------------------*/
+	/*ロゴ画像（トップページのロゴ画像）*/
+	header #logo img {
+		left: 5%;	/*左から5%の場所に配置*/
+		width: 20%;	/*画像幅*/
+	}
+	
+/*メインメニュー
+---------------------------------------------------------------------------*/
+/*スマホ用メニューブロック*/
+#menubar-s {
+	display: block;overflow: hidden;
+	position: absolute;
+	top: 0px;
+	z-index: 30;
+	width: 100%;
+	background: rgba(0,0,0,0.8);	/*背景色*/
+	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
+	animation-name: menu1;		/*上のkeyframesの名前*/
+	animation-duration: 0.5S;	/*アニメーションの実行時間。0.5秒。*/
+	animation-fill-mode: both;	/*アニメーションの完了後、最後のキーフレームを維持する*/
+	margin-bottom: 30px;
+}
+/*メニュー１個あたりの設定*/
+#menubar-s li a {
+	display: block;text-decoration: none;
+	padding: 15px 10px 15px 20px;	/*上、右、下、左へのメニュー内の余白*/
+	border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
+	color: #fff;	/*文字色*/
+	font-size: 20px;
+}
+/*PC用メニューを非表示にする*/
+#menubar {display: none;}
+
+/*３本バーアイコン設定
+---------------------------------------------------------------------------*/
+/*３本バーブロック*/
+#menubar_hdr {
+	display: block;
+	z-index: 40;
+	position: absolute;
+	top: 20px;	/*上から20pxの場所に配置*/
+	right: 3%;	/*右から3%の場所に配置*/
+	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+}
+/*アイコン共通設定*/
+#menubar_hdr.close,
+#menubar_hdr.open {
+	width: 50px;	/*幅*/
+	height: 50px;	/*高さ*/
+}
+/*三本バーアイコン*/
+#menubar_hdr.close {
+	background: #000 url(photos\bars_hoso.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+}
+/*閉じるアイコン*/
+#menubar_hdr.open {
+	background: #000 url(photos\bars_hoso.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
+}
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	padding-top: 50px;	/*上側のボックス内の余白*/
+}
+section + section {
+	padding-top: 20px;
+}
+
+/*box1（トップページの「私たちのこだわり食材」以下の４つのブロック）
+---------------------------------------------------------------------------*/
+/*説明文*/
+.box1 figcaption.w50 {
+	width: auto;
+}
+
+
+/*画面幅480px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px){
+
+	/*全体の設定
+	---------------------------------------------------------------------------*/
+	body {
+		font-size: 12px;	/*文字サイズ*/
+		line-height: 1.5;	/*行間*/
+	}
+	
+	/*コンテンツ
+	---------------------------------------------------------------------------*/
+	#contents h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	#contents h3 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	/*h2見出しの１文字目*/
+	#contents h2::first-letter {
+		border: none;padding: 0;margin: 0;text-shadow: none;
+		font-size: 24px;	/*文字サイズ*/
+		letter-spacing: 0.2em;
+	}
+	/*h2見出し内のspanタグ*/
+	#contents h2 span {
+		font-size: 10px;
+		margin-top: 0px;
+	}
+	
+	/*フッターメニュー
+	---------------------------------------------------------------------------*/
+	/*ボックス全体*/
+	#footermenu {
+		display: none;
+	}
