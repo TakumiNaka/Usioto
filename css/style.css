@@ -7,14 +7,10 @@
 body{
     margin: 0px;
 	padding:0px;
-    background-color: white;
-    /*背景色*/
+	background-color: white;
     color: black;
-    /*全体の文字色*/
 	font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	    /*フォント種類*/
     line-height: 2;
-    /*行間*/
     -webkit-text-size-adjust: none;
 }
 
@@ -23,7 +19,6 @@ h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form, figure, form {
 	padding: 0px;
 	font-size: 100%;
 	font-weight: normal;
-	
 }
 
 ul {
@@ -97,11 +92,8 @@ a:hover {
 #menubar .animateme {
 	width: 100%;
 	height: 70px;
-	/*高さ*/
 	background: #fff;
-	/*背景色（古いブラウザ用）*/
 	background: linear-gradient(rgba(255, 255, 255, 0.9), #fff 60%);
-	/*グラデーション*/
 }
 
 /*メニューブロック内にあるロゴ画像*/
@@ -159,8 +151,7 @@ header #logo img{
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
-	background:white ; 
-	/*背景色の設定*/
+	background:white ;
 	padding: 120px 5% 50px;
 }
 
@@ -169,21 +160,21 @@ header #logo img{
 }
 
 #contents h2{
-	font-family:  "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;;
 	font-size: 40px;
 	margin-bottom: 30px;
+	margin-top: 20px;
 	text-align: center;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.3em;
 	color: black;
 }
 
 #contents h2::first-letter {
 	font-size: 60px;
-	border: 1.5px solid black	;
+	border: 1.5px solid black;
 	padding: 10px;
 	margin-right: 5px;
 	letter-spacing: normal;
-	text-shadow: 5px 5px rgba(255, 255, 255, 0.2);
+	text-shadow: 5px 5px rgba(191, 191, 191, 0.5);
 	/*文字の影。右に、下に、255,255,255は白の事で0.2は透明度20%の事。*/
 }
 
@@ -201,8 +192,8 @@ header #logo img{
 .box1 figcaption strong {
 	display: block;
 	font-weight: normal;
-	font-size: 25px;	/*文字サイズ*/
-	color: black;		/*文字色*/
+	font-size: 28px;
+	color: black;
 }
 
 
@@ -257,12 +248,10 @@ header #logo img{
 	font-size: 30px;
 	padding-left: 20px;
     text-decoration: none;
-    
 }
 
 #tenpoinfo .box dl dt span.tel a{
     color: black;
-   
 }
 
 
@@ -345,6 +334,11 @@ header #logo img{
 	text-decoration: none;
 }
 
+.pdlr165 {
+    padding: 0 165px;
+    float: left;
+}
+
 /*コピーライト
 ---------------------------------------------------------------------------*/
 #copyright {
@@ -354,6 +348,12 @@ header #logo img{
 }
 #copyright a {text-decoration: none;}
 #copyright a:hover {color: red;}
+
+/*その他
+---------------------------------------------------------------------------*/
+.w50 {overflow: hidden;width: 50%;}
+.fl {float: left;}
+.fr {float: right;}
 
 /*画面幅800px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -450,10 +450,9 @@ section + section {
 .box1 figcaption strong {
 	display: block;
 	font-weight: normal;
-	font-size: 20px;	
-	color: #9f1b3b;		
+	font-size: 30px;
+	color: #9f1b3b;
 }
-
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -462,15 +461,16 @@ section + section {
 	/*全体の設定
 	---------------------------------------------------------------------------*/
 	body {
-		font-size: 12px;	/*文字サイズ*/
-		line-height: 1.5;	/*行間*/
+		font-size: 12px;
+		line-height: 1.5;
 	}
 	
 	/*コンテンツ
 	---------------------------------------------------------------------------*/
 	#contents h2 {
-		font-size: 24px;
+		font-size: 45px;
 		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	#contents h3 {
 		font-size: 20px;
@@ -479,7 +479,7 @@ section + section {
 	/*h2見出しの１文字目*/
 	#contents h2::first-letter {
 		border: none;padding: 0;margin: 0;text-shadow: none;
-		font-size: 24px;	/*文字サイズ*/
+		font-size: 49px;
 		letter-spacing: 0.2em;
 	}
 	/*h2見出し内のspanタグ*/
