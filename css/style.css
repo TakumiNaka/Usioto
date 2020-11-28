@@ -383,10 +383,10 @@ header #logo img{
 	top: 0px;
 	z-index: 30;
 	width: 100%;
-	background: rgba(0,0,0,0.8);	/*背景色*/
+	background: rgba(0,0,0,0.8);
 	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
 	animation-name: menu1;		/*上のkeyframesの名前*/
-	animation-duration: 0.5S;	/*アニメーションの実行時間。0.5秒。*/
+	animation-duration: 0.5S;
 	animation-fill-mode: both;	/*アニメーションの完了後、最後のキーフレームを維持する*/
 	margin-bottom: 30px;
 }
@@ -408,8 +408,8 @@ header #logo img{
 	display: block;
 	z-index: 40;
 	position: absolute;
-	top: 20px;	/*上から20pxの場所に配置*/
-	right: 3%;	/*右から3%の場所に配置*/
+	top: 20px;
+	right: 3%;
 	border: 1px solid #fff;	/*枠線の幅、線種、色*/
 }
 /*アイコン共通設定*/
