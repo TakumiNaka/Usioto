@@ -443,6 +443,17 @@ section + section {
 	width: auto;
 }
 
+.box1 figcaption.w50 {
+	width: 47%;
+}
+
+.box1 figcaption strong {
+	display: block;
+	font-weight: normal;
+	font-size: 20px;	
+	color: #9f1b3b;		
+}
+
 
 /*画面幅480px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
